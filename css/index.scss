@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  margin: 0;
+
+  .content {
+    flex: 1;
+  }
+
+  .wall {
+    flex: 2;
+  }
+
+}

@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  margin: 0; }
+  body .content {
+    flex: 1; }
+  body .wall {
+    flex: 2; }
+
+/*# sourceMappingURL=index.css.map */
