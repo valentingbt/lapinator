@@ -20,17 +20,17 @@ html, body {
       html nav ul li, body nav ul li {
         float: left; }
         html nav ul li .active, body nav ul li .active {
-          color: blue;
-          border-bottom: 3px;
+          color: mediumslateblue;
+          border-bottom: 2.5px;
           border-bottom-style: solid; }
         html nav ul li a, body nav ul li a {
           color: black;
           display: block;
           text-align: center;
-          padding: 14px 16px;
+          padding: 30px 40px 8px 40px;
           text-decoration: none; }
           html nav ul li a:hover, body nav ul li a:hover {
-            color: blue; }
+            color: mediumslateblue; }
   @media screen and (max-width: 992px) {
     html .left-panel div.main-content div.description, body .left-panel div.main-content div.description {
       align-items: center;

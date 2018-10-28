@@ -30,8 +30,8 @@ html, body {
         float: left;
 
         .active {
-          color: blue;
-          border-bottom: 3px;
+          color: mediumslateblue;
+          border-bottom: 2.5px;
           border-bottom-style: solid;
        }
 
@@ -39,11 +39,11 @@ html, body {
           color: black;
           display: block;
           text-align: center;
-          padding: 14px 16px;
+          padding: 30px 40px 8px 40px;
           text-decoration: none;
 
           &:hover {
-            color: blue;
+            color: mediumslateblue;
           }
 
         }
