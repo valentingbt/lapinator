@@ -1,6 +1,13 @@
 body {
   display: flex;
 
+  @media screen and (max-width: 1000px) {
+    background-image: url(../img/Group.svg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+
   .content {
     flex: 2;
     .session {
@@ -10,13 +17,22 @@ body {
       flex-direction: column;
       justify-content: center;
       margin-left: 50px;
+      @media screen and (max-width: 1000px) {
+        margin: 0;
+      }
 
       .titleblock {
         margin-left: 50px;
 
+        @media screen and (max-width: 1000px) {
+          margin-left: 0;
+          align-self: center;
+        }
+
         .title {
           font-size: 50px;
           margin: 0;
+
         }
 
       }
@@ -33,7 +49,7 @@ body {
         margin: 70px 30px 70px 0;
         z-index: 1;
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1000px) {
           width: 100%;
         }
 
@@ -47,7 +63,7 @@ body {
           height: 100%;
           width: 115%;
 
-          @media screen and (max-width: 992px) {
+          @media screen and (max-width: 1000px) {
             flex-wrap: wrap;
             width: 100%;
           }
@@ -59,7 +75,7 @@ body {
               color: #C0C4D0;
               font-size: 2.5rem;
             }
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1000px) {
               width: 15%;
             }
           }
@@ -73,7 +89,7 @@ body {
             height: 70px;
             width: 60%;
 
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1000px) {
               height: 75px;
               width: 80%;
             }
@@ -100,7 +116,7 @@ body {
             width: 250px;
             z-index: 2;
 
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1000px) {
               margin: 30px;
             }
 
@@ -115,6 +131,10 @@ body {
             }
           }
         }
+        @media screen and (max-width: 1000px) {
+          width: 80%;
+          align-self: center;
+        }
       }
 
       .password {
@@ -122,6 +142,10 @@ body {
         font-style: italic;
         text-decoration: none;
         align-self: center;
+
+        @media screen and (max-width: 1000px) {
+          margin-top: 50px;
+        }
       }
 
     }
@@ -134,6 +158,10 @@ body {
     background-size: cover;
     background-position: center;
     height: 100%;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
   }
 
 }

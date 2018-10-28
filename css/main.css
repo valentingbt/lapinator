@@ -13,10 +13,10 @@ html, body {
       display: none;
       width: 40px;
       height: 40px;
-      padding: 20px 10px 0 20px;
-      /* @media screen and (max-width: 1395px) {
-         display: block;
-       } */ }
+      padding: 20px 10px 0 20px; }
+      @media screen and (max-width: 1000px) {
+        html nav .burger, body nav .burger {
+          display: block; } }
     html nav .logo, body nav .logo {
       padding: 20px 10px 0 20px;
       width: 40px;
@@ -27,10 +27,7 @@ html, body {
       padding: 0 30px 0 30px;
       width: 100%;
       display: flex;
-      justify-content: space-between;
-      /* @media screen and (max-width: 1395px) {
-         display: none;
-       } */ }
+      justify-content: space-between; }
       html nav ul li, body nav ul li {
         float: left; }
         html nav ul li .active, body nav ul li .active {
@@ -47,6 +44,9 @@ html, body {
           html nav ul li a:hover, body nav ul li a:hover {
             color: mediumslateblue;
             transition: 0.3s; }
+      @media screen and (max-width: 1000px) {
+        html nav ul, body nav ul {
+          display: none; } }
   @media screen and (max-width: 992px) {
     html .left-panel div.main-content div.description, body .left-panel div.main-content div.description {
       align-items: center;

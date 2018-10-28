@@ -1,5 +1,11 @@
 body {
   display: flex; }
+  @media screen and (max-width: 1000px) {
+    body {
+      background-image: url(../img/Group.svg);
+      background-size: cover;
+      background-position: center;
+      height: 100%; } }
   body .content {
     flex: 2; }
     body .content .session {
@@ -9,8 +15,15 @@ body {
       flex-direction: column;
       justify-content: center;
       margin-left: 50px; }
+      @media screen and (max-width: 1000px) {
+        body .content .session {
+          margin: 0; } }
       body .content .session .titleblock {
         margin-left: 50px; }
+        @media screen and (max-width: 1000px) {
+          body .content .session .titleblock {
+            margin-left: 0;
+            align-self: center; } }
         body .content .session .titleblock .title {
           font-size: 50px;
           margin: 0; }
@@ -25,7 +38,7 @@ body {
         width: 130%;
         margin: 70px 30px 70px 0;
         z-index: 1; }
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1000px) {
           body .content .session .input-form-container {
             width: 100%; } }
         body .content .session .input-form-container .input-form {
@@ -35,7 +48,7 @@ body {
           border: none;
           height: 100%;
           width: 115%; }
-          @media screen and (max-width: 992px) {
+          @media screen and (max-width: 1000px) {
             body .content .session .input-form-container .input-form {
               flex-wrap: wrap;
               width: 100%; } }
@@ -44,7 +57,7 @@ body {
             body .content .session .input-form-container .input-form label i {
               color: #C0C4D0;
               font-size: 2.5rem; }
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1000px) {
               body .content .session .input-form-container .input-form label {
                 width: 15%; } }
           body .content .session .input-form-container .input-form input[type='text'] {
@@ -53,7 +66,7 @@ body {
             text-indent: 25px;
             height: 70px;
             width: 60%; }
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1000px) {
               body .content .session .input-form-container .input-form input[type='text'] {
                 height: 75px;
                 width: 80%; } }
@@ -73,7 +86,7 @@ body {
             height: 76px;
             width: 250px;
             z-index: 2; }
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 1000px) {
               body .content .session .input-form-container .input-form input[type='submit'] {
                 margin: 30px; } }
             body .content .session .input-form-container .input-form input[type='submit']:hover {
@@ -82,16 +95,26 @@ body {
               transition: box-shadow 0.3s; }
             body .content .session .input-form-container .input-form input[type='submit']:focus {
               outline: none; }
+        @media screen and (max-width: 1000px) {
+          body .content .session .input-form-container {
+            width: 80%;
+            align-self: center; } }
       body .content .session .password {
         color: lightgrey;
         font-style: italic;
         text-decoration: none;
         align-self: center; }
+        @media screen and (max-width: 1000px) {
+          body .content .session .password {
+            margin-top: 50px; } }
   body .wallpaper {
     flex: 3;
     background-image: url(../img/rabbit.jpg);
     background-size: cover;
     background-position: center;
     height: 100%; }
+    @media screen and (max-width: 1000px) {
+      body .wallpaper {
+        display: none; } }
 
 /*# sourceMappingURL=index.css.map */
