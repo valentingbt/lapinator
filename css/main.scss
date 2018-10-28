@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
   width: 100%;
   height: 100%;
+  margin: 0;
+  overflow: hidden;
 
   // NAVBAR
 
-  .navbar {
+
+  nav {
 
     display: flex;
     justify-content: space-around;
@@ -28,8 +31,8 @@ body {
 
         .active {
           color: blue;
-          border-style: solid;
-          border-width: 3px;
+          border-bottom: 3px;
+          border-bottom-style: solid;
        }
 
         a {
@@ -49,6 +52,16 @@ body {
 
     }
 
+  }
+
+
+  /*Main Content*/
+
+  @media screen and (max-width: 992px) {
+    .left-panel div.main-content div.description {
+      align-items: center;
+      width: 100%;
+    }
   }
 
 }

@@ -1,13 +1,134 @@
 body {
   display: flex;
-  margin: 0;
 
   .content {
-    flex: 1;
+    flex: 2;
+    .session {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 50px;
+
+      .input-form-wrapper {
+        border: none;
+        border-radius: 40px;
+        background: white;
+        box-shadow: 0 0 20px #bebebe;
+        -webkit-box-shadow: 0 0 20px #bebebe;
+        transition: box-shadow 0.3s;
+
+        height: 80px;
+        width: 130%;
+
+        margin: 50px;
+
+        z-index: 1;
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+
+        form.input-form {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          border: none;
+
+          height: 100%;
+          width: 115%;
+
+          @media screen and (max-width: 992px) {
+            flex-wrap: wrap;
+            width: 100%;
+          }
+
+          label {
+            margin-left: 5px;
+
+            i {
+              color: #C0C4D0;
+              font-size: 2.5rem;
+            }
+            @media screen and (max-width: 992px) {
+              width: 15%;
+            }
+          }
+
+          input[type='text'] {
+            border: none;
+            border-radius: 40px;
+
+            text-indent: 25px;
+
+            height: 70px;
+            width: 60%;
+
+            @media screen and (max-width: 992px) {
+              height: 75px;
+              width: 80%;
+            }
+
+            &::placeholder {
+              color: #C0C4D0;
+              font-size: 1.1rem;
+            }
+          }
+
+          input[type='submit'] {
+            border: none;
+            border-radius: 40px;
+            box-shadow: 0 0 20px #bebebe;
+            color: #FFFFFF;
+            font-size: 1.1rem;
+            background-color: rgb(80, 227, 194);
+            background-color: #50E3C2;
+            transition: box-shadow 0.3s;
+
+            height: 76px;
+            width: 250px;
+            z-index: 2;
+
+            @media screen and (max-width: 992px) {
+              margin: 30px;
+            }
+
+            &:hover {
+              cursor: pointer;
+              box-shadow: 0 0 20px #818181;
+              transition: box-shadow 0.3s;
+            }
+          }
+        }
+      }
+
+      .password {
+        font-style: italic;
+        text-decoration: none;
+      }
+
+      .titleblock {
+        margin-left: 20px;
+
+        .title {
+          font-size: 50px;
+          margin-bottom: 0;
+        }
+
+      }
+
+    }
+
   }
 
-  .wall {
-    flex: 2;
+  .wallpaper {
+    flex: 3;
+    background-image: url(../img/rabbit.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
   }
 
 }
