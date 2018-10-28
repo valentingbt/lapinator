@@ -9,22 +9,36 @@ html, body {
 
   // NAVBAR
 
-
   nav {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    .burger {
+      display: none;
+      width: 40px;
+      height: 40px;
+      padding: 20px 10px 0 20px;
+
+     /* @media screen and (max-width: 1395px) {
+        display: block;
+      } */
+    }
 
     .logo {
+      padding: 20px 10px 0 20px;
       width: 40px;
       height: 40px;
     }
 
+
     ul {
       list-style-type: none;
       margin: 0;
-      padding: 0;
-      overflow: hidden;
+      padding: 0 30px 0 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
 
       li {
         float: left;
@@ -33,7 +47,7 @@ html, body {
           color: mediumslateblue;
           border-bottom: 2.5px;
           border-bottom-style: solid;
-       }
+        }
 
         a {
           color: black;
@@ -41,19 +55,24 @@ html, body {
           text-align: center;
           padding: 30px 40px 8px 40px;
           text-decoration: none;
+          transition: 0.3s;
 
           &:hover {
             color: mediumslateblue;
+            transition: 0.3s;
           }
 
         }
 
       }
 
+     /* @media screen and (max-width: 1395px) {
+        display: none;
+      } */
+
     }
 
   }
-
 
   /*Main Content*/
 

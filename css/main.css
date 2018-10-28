@@ -8,15 +8,29 @@ html, body {
   /*Main Content*/ }
   html nav, body nav {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-between; }
+    html nav .burger, body nav .burger {
+      display: none;
+      width: 40px;
+      height: 40px;
+      padding: 20px 10px 0 20px;
+      /* @media screen and (max-width: 1395px) {
+         display: block;
+       } */ }
     html nav .logo, body nav .logo {
+      padding: 20px 10px 0 20px;
       width: 40px;
       height: 40px; }
     html nav ul, body nav ul {
       list-style-type: none;
       margin: 0;
-      padding: 0;
-      overflow: hidden; }
+      padding: 0 30px 0 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      /* @media screen and (max-width: 1395px) {
+         display: none;
+       } */ }
       html nav ul li, body nav ul li {
         float: left; }
         html nav ul li .active, body nav ul li .active {
@@ -28,9 +42,11 @@ html, body {
           display: block;
           text-align: center;
           padding: 30px 40px 8px 40px;
-          text-decoration: none; }
+          text-decoration: none;
+          transition: 0.3s; }
           html nav ul li a:hover, body nav ul li a:hover {
-            color: mediumslateblue; }
+            color: mediumslateblue;
+            transition: 0.3s; }
   @media screen and (max-width: 992px) {
     html .left-panel div.main-content div.description, body .left-panel div.main-content div.description {
       align-items: center;
